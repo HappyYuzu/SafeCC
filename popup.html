@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe CC</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+    <h1>CC License Settings</h1>
+
+    <div class="license-container" id="cc-by-nc" title="출처 명시 O / 상업적 이용 X / 내용 수정 & 2차 창작 O">
+        <div class="license-header">
+            <img src="icons/cc-by-nc.png" alt="CC BY-NC Icon" class="license-icon">
+            <span>CC BY-NC</span>
+        </div>
+        <div class="license-content">
+            <label for="cc-by-nc-tag">Tag:</label>
+            <textarea id="cc-by-nc-tag"></textarea>
+            <label for="cc-by-nc-text">Text:</label>
+            <textarea id="cc-by-nc-text"></textarea>
+            <button class="reset-button" data-license="cc-by-nc">
+                <i class="fas fa-undo-alt"></i> 기본값
+            </button>
+        </div>
+    </div>
+    
+    <div class="license-container" id="cc-by-nc-sa" title="출처 명시 O / 상업적 이용 X / CC 동일조건 O">
+        <div class="license-header">
+            <img src="icons/cc-by-nc-sa.png" alt="CC BY-NC-SA Icon" class="license-icon">
+            <span>CC BY-NC-SA</span>
+        </div>
+        <div class="license-content">
+            <label for="cc-by-nc-sa-tag">Tag:</label>
+            <textarea id="cc-by-nc-sa-tag"></textarea>
+            <label for="cc-by-nc-sa-text">Text:</label>
+            <textarea id="cc-by-nc-sa-text"></textarea>
+            <button class="reset-button" data-license="cc-by-nc-sa">
+                <i class="fas fa-undo-alt"></i> 기본값
+            </button>          
+        </div>
+    </div>
+    
+    <div class="license-container" id="cc-by-nc-nd" title="출처 명시 O / 상업적 이용 X / 내용 수정 & 2차 창작 X">
+        <div class="license-header">
+            <img src="icons/cc-by-nc-nd.png" alt="CC BY-NC-ND Icon" class="license-icon">
+            <span>CC BY-NC-ND</span>
+        </div>
+        <div class="license-content">
+            <label for="cc-by-nc-nd-tag">Tag:</label>
+            <textarea id="cc-by-nc-nd-tag"></textarea>
+            <label for="cc-by-nc-nd-text">Text:</label>
+            <textarea id="cc-by-nc-nd-text"></textarea>
+            <button class="reset-button" data-license="cc-by-nc-nd">
+                <i class="fas fa-undo-alt"></i> 기본값
+            </button>            
+        </div>
+    </div>
+
+    <button id="global-reset">
+        <i class="fas fa-undo-alt"></i> 전체 기본값
+    </button>
+  
+    <script src="popup.js"></script>
+</body>
+</html>
